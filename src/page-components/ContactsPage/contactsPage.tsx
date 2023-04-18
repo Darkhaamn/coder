@@ -31,22 +31,6 @@ export function ContactsPage({ ...props }: ContactsPageProps): JSX.Element {
         }
         varname="myPhone"
       />
-      <VarText
-        text={
-          <a className={styles.link} target={'_blank'} href="https://t.me/bit_Makar">
-            @bit_Makar
-          </a>
-        }
-        varname="myTelegram"
-      />
-      <VarText
-        text={
-          <a className={styles.link} target={'_blank'} href="https://join.skype.com/invite/m6dJ1xdOw3AW">
-            link
-          </a>
-        }
-        varname="mySkype"
-      />
     </div>
   );
 }
