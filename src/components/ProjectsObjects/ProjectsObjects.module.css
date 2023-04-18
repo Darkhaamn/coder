@@ -1,0 +1,116 @@
+.variablesInner {
+	display: flex;
+	margin-top: 11px;
+
+}
+
+.literall {
+	color: var(--white)
+}
+
+
+
+.tlglink {
+	color: var(--link-color);
+	text-decoration: underline;
+}
+
+.objecttextwrapper {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0;
+	margin: 0;
+	padding-top: 25px;
+	list-style: none;
+	padding-left: 50px;
+}
+
+.objecttext {
+	margin-top: 32px;
+
+}
+
+.secondkeyskeys {
+
+	margin-top: 32px;
+	padding-left: 0;
+}
+
+.secondkeyskeys:first-child {
+	margin: 0;
+}
+
+.objecttext:first-child {
+	margin: 0;
+
+}
+
+.objectkey,
+.literallInObject {
+	color: var(--white)
+}
+
+
+.objectkey {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.literallInObject {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.secondkeyswrapper {
+
+
+	list-style: none;
+	margin: 0;
+	padding-top: 25px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	padding-left: 25px;
+	margin-left: 25px;
+
+
+}
+
+.coursestext {
+	color: var(--light-green);
+	margin-top: 32px;
+}
+
+
+
+.coursestext:first-child {
+	margin-top: 0;
+}
+
+.coursesWrapper {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 24px;
+	padding-left: 60px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+@media(max-width:1024px) {
+
+	.objecttextwrapper {
+		padding-top: 12px;
+		padding-left: 25px;
+	}
+
+	.objecttext {
+		margin-top: 20px;
+	}
+
+	.literallInObject,
+	.literall {
+		font-size: 14px;
+	}
+
+	.variablesInner {
+		margin-top: 8px;
+	}
+}

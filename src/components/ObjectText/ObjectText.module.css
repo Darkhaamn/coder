@@ -1,0 +1,34 @@
+.textInner {
+	max-width: 809px;
+	width: 100%;
+	color: var(--light-green);
+	line-height: 30px;
+
+}
+
+.literall {
+	color: var(--white)
+}
+
+.white {
+	color: var(--white);
+}
+
+
+
+
+@media (max-width:1024px) {
+	.textInner {
+		font-size: 14px;
+		line-height: 25px;
+		max-width: 564px;
+	}
+}
+
+
+@media (max-width:768px) {
+	.textInner {
+		
+		max-width: 369px;
+	}
+}

@@ -1,0 +1,152 @@
+.variablesInner {
+	display: flex;
+	margin-top: 11px;
+
+}
+
+.literall {
+	color: var(--white)
+}
+
+.tlglink {
+	color: var(--link-color);
+	text-decoration: underline;
+}
+
+.objecttextwrapper {
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	padding: 0;
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 19px;
+	padding-left: 62px;
+	list-style: none;
+}
+
+.objecttext {
+	margin-top: 30px;
+}
+
+.secondkeyskeys {
+
+	margin-top: 32px;
+	padding-left: 0;
+}
+
+.secondkeyskeys:first-child {
+	margin: 0;
+}
+
+.objecttext:first-child {
+	margin: 0;
+
+}
+
+.objectkey,
+.literallInObject {
+	color: var(--white)
+}
+
+
+.objectkey {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.literallInObject {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.secondkeyswrapper {
+
+
+	list-style: none;
+	margin: 0;
+	padding-top: 25px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+	padding-left: 25px;
+	margin-left: 25px;
+
+
+}
+
+.coursestext {
+	color: var(--light-green);
+	margin-top: 32px;
+	cursor: pointer;
+}
+
+
+
+.coursestext:first-child {
+	margin-top: 0;
+}
+
+.coursesWrapper {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	padding-top: 24px;
+	padding-left: 60px;
+	border-left: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+
+
+@media (max-width: 1024px) {
+
+	.objectkey,
+	.coursestext,
+	.literall,
+	.literallInObject {
+		font-size: 14px;
+		margin-left: 0;
+	}
+
+
+
+	.secondkeyswrapper,
+	.coursesWrapper {
+		padding-top: 12px;
+		margin-left: 0;
+		padding-left: 15px;
+	}
+
+
+	.secondkeyskeys,
+	.objecttext,
+	.coursestext {
+		margin-top: 24px;
+	}
+
+	.objecttextwrapper {
+		padding-top: 8px;
+		padding-bottom: 0px;
+		padding-left: 25px;
+	}
+
+
+
+	.placesOfWork {
+		padding-top: 8px;
+		padding-bottom: 4px;
+	}
+
+	.about {
+		padding-top: 12px;
+	}
+
+
+
+	.variablesInner {
+		margin-top: 8px;
+	}
+
+	.coursestext:first-child {
+		margin: 0;
+	}
+
+
+
+}

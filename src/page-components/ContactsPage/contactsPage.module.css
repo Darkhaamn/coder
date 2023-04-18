@@ -1,0 +1,10 @@
+.link {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+@media (max-width:590px) {
+    .contactswrapper {
+        height: 24vh;
+    }
+}

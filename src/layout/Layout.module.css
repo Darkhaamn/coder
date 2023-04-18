@@ -1,0 +1,99 @@
+.wrapper {
+	display: grid;
+	grid-template-areas:
+		"header header"
+		"sidebar nav"
+		"sidebar body";
+
+	grid-template-rows: auto 52px auto;
+	grid-template-columns: 360px 1fr;
+
+}
+
+.nav {
+	grid-area: nav;
+}
+
+.header {
+	grid-area: header;
+}
+
+.sidebar {
+	grid-area: sidebar;
+}
+
+.body {
+	height: 88vh;
+	overflow-y: auto;
+	grid-area: body;
+	background-color: var(--black);
+
+}
+
+.body::-webkit-scrollbar {
+	width: 2px;
+	/* ширина всей полосы прокрутки */
+}
+
+.body::-webkit-scrollbar-track {
+	background: var(--background-color);
+	/* цвет зоны отслеживания */
+}
+
+.body::-webkit-scrollbar-thumb {
+	background-color: var(--background-color);
+	/* цвет бегунка */
+	border-radius: 20px;
+	/* округлось бегунка */
+	border: 3px solid rgba(255, 255, 255, 0.2);
+	/* отступ вокруг бегунка */
+}
+
+.footer {
+	grid-area: footer;
+}
+
+@media(max-width: 1024px) {
+	.wrapper {
+		grid-template-columns: 300px 1fr;
+		grid-template-rows: auto 42px auto;
+
+	}
+
+}
+
+
+
+@media(max-width: 768px) {
+	.wrapper {
+		grid-template-columns: 250px 1fr;
+
+
+
+	}
+
+}
+
+
+@media(max-width: 590px) {
+	.wrapper {
+		grid-template-areas:
+			"header"
+			"sidebar"
+			"nav"
+			"body";
+
+		grid-template-rows: auto;
+		grid-template-columns: 1fr;
+		position: relative;
+	}
+
+	.body {
+		overflow: hidden;
+		height: auto;
+		margin-top: -2px;
+	}
+
+
+
+}

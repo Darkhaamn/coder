@@ -1,0 +1,31 @@
+.link {
+    color: var(--link-color);
+    text-decoration: underline;
+}
+
+.objecttextwrapper {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0;
+    margin: 0;
+    padding-top: 25px;
+    list-style: none;
+}
+
+.objecttext {
+    margin-top: 32px;
+    padding-left: 50px;
+}
+
+.objecttext:first-child {
+    margin-top: 0;
+}
+
+.literall {
+    color: var(--white)
+}
+
+.variablesInner {
+    display: flex;
+    margin-top: 11px;
+
+}

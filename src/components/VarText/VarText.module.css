@@ -1,0 +1,46 @@
+.textInner {
+
+	margin-top: 11px;
+}
+
+.textInner:first-child {
+	margin-top: 0px;
+}
+
+.variable {
+	color: var(--green);
+	margin-right: 10px
+}
+
+.varname {
+	color: var(--red);
+	margin-right: 10px;
+
+}
+
+.equals {
+	color: var(--yellow);
+	margin-right: 10px;
+}
+
+.text {
+	color: var(--light-green)
+}
+
+.header {
+	margin: 0;
+	padding: 0;
+	font-size: 18px;
+	font-weight: 400;
+}
+
+
+@media(max-width: 1024px) {
+	.header {
+		font-size: 14px;
+	}
+
+	.textInner {
+		margin-top: 8px;
+	}
+}

@@ -1,0 +1,185 @@
+.listwrapper {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+	justify-content: center;
+	align-items: baseline;
+	gap: 0 12px;
+	padding-left: 55px;
+	padding-bottom: 20px;
+	margin-top: 32px;
+	overflow-y: auto;
+	height: 32vh;
+}
+
+.withoutscroll {
+	overflow: hidden;
+}
+
+.listwrapper::-webkit-scrollbar {
+	width: 2px;
+	/* ширина всей полосы прокрутки */
+}
+
+.listwrapper::-webkit-scrollbar-track {
+	background: var(--background-color);
+	/* цвет зоны отслеживания */
+}
+
+.listwrapper::-webkit-scrollbar-thumb {
+	background-color: var(--background-color);
+	/* цвет бегунка */
+	border-radius: 20px;
+	/* округлось бегунка */
+	border: 3px solid rgba(255, 255, 255, 0.2);
+	/* отступ вокруг бегунка */
+}
+
+.arrowbutton {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	transition: all 0.3s;
+	margin-right: 12px;
+}
+
+.active {
+	transform: rotate(0deg);
+}
+
+.notactive {
+	transform: rotate(-90deg);
+}
+
+
+
+.skilllist {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	margin-left: 30px;
+	margin-top: 18px;
+	transition: all 0.3s;
+	height: auto;
+
+}
+
+.skillicon {
+	width: 24px;
+	height: 24px;
+}
+
+.headerItem {
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+}
+
+.listheader {
+	margin: 0;
+	display: inline-block;
+	margin-left: 8px;
+	font-size: 18px;
+
+
+}
+
+.listItem {
+	display: flex;
+	align-items: center;
+	margin-bottom: 12px;
+	font-weight: 400;
+	font-size: 18px;
+	color: var(--light-grey);
+	transition: all 0.3s;
+}
+
+.activeItem {
+	opacity: 1;
+	height: 24px;
+
+
+}
+
+
+.notactiveitem {
+	margin: 0;
+	height: 0;
+	opacity: 0;
+
+}
+
+
+
+
+.listItem:last-child {
+	margin-bottom: 0;
+}
+
+.listItemText {
+	margin-left: 8px;
+}
+
+
+
+@media (max-width:1024px) {
+
+	.listheader {
+		font-size: 14px;
+	}
+
+	.listItem {
+		font-size: 14px;
+	}
+}
+
+
+@media (max-width:768px) {
+	.listwrapper {
+		padding-left: 30px;
+	}
+
+	.arrowbutton {
+		margin-right: 8px;
+	}
+
+	.skillicon {
+		width: 16px;
+		height: 16px;
+	}
+
+}
+
+
+@media(max-width: 590px) {
+	.listwrapper {
+
+		overflow: hidden;
+		height: auto;
+
+	}
+
+	.skilllist {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		height: 168px;
+	}
+
+	.notactiveitem {
+		margin: 0;
+		height: 0;
+		opacity: 0;
+
+	}
+
+	.arrowbutton {
+		margin-right: 12px;
+	}
+
+	.listwrapper {
+		padding-bottom: 0px;
+	}
+
+
+}
