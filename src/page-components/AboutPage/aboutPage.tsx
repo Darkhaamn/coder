@@ -6,7 +6,7 @@ import styles from './aboutPage.module.css';
 export function AboutPage({ ...props }: aboutPageProps): JSX.Element {
   return (
     <div {...props}>
-      <VarText varname={'myName'} text={`'Oblako.dev'`}></VarText>
+      <VarText varname={'myName'} text={`'Darkhaa'`}></VarText>
       <VarText varname={'mySurname'} text={`'Oblako.dev'`}></VarText>
       <VarText varname={'university'} text={`'Oblako.dev'`}></VarText>
       <VarText
